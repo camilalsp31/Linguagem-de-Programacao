@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+/*
+ 8.Receba o valor de um depósito em poupança. Calcule e mostre o valor após 1 mês de aplicação sabendo que rende 1,3% a. m.
+*/
+public class Exerc_08 {
+    public static void main (String args []){
+        
+        double deposito, aplicaçao;
+        
+        deposito = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do depósito "));
+        aplicaçao = deposito * 1.3;
+        
+        JOptionPane.showMessageDialog(null,"O rendimento da poupança é " + aplicaçao);
+    }
+    
+}
