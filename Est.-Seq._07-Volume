@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+/*
+7-Receba os valores do comprimento, largura e altura de um paralelepípedo. Calcule e mostre seu volume.
+*/
+public class Exerc_07 {
+    public static void main (String args []){
+        
+        int C, L, H, V;
+        
+        C = Integer.parseInt(JOptionPane.showInputDialog("Digite o vallor do comprimento "));
+        L = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da largura "));
+        H = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da altura "));
+        
+        JOptionPane.showMessageDialog(null,"O valor do volume é " + (V = C * L * H ));
+    }
+}
