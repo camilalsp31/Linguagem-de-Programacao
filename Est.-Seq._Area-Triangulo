@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+/*
+ 3.Receba a base e a altura de um triângulo. Calcule e mostre a sua área.
+*/
+public class Exerc_03 {
+   public static void main (String args []){
+       
+       int B, H, A;
+       
+       B = Integer.parseInt(JOptionPane.showInputDialog("DIGITE O VALOR DA BASE "));
+       H = Integer.parseInt(JOptionPane.showInputDialog("DIGITE O VALOR DA ALTURA "));
+       
+       JOptionPane.showMessageDialog(null,"A área do triângulo é " + (A = (B * H)/2));
+       
+   } 
+    
+}
