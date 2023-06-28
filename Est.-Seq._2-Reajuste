@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+/*
+2.Receba o salário de um funcionário e mostre o novo salário com reajuste de 15%.
+*/
+public class Exerc_02{
+    public static void main (String args []){
+        
+        Double SalarioReceber, SalarioReajuste;
+        
+        SalarioReceber = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do Salário "));
+        
+        JOptionPane.showMessageDialog(null,"O Salário com Reajuste é " + (SalarioReajuste = (SalarioReceber * 1.15)));
+        
+    }
+}
