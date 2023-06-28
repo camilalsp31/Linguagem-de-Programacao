@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+/*
+4.	Receba a temperatura em graus Celsius. Calcule e mostre a sua temperatura convertida em fahrenheit F = (9*C+160) /5.
+*/
+public class Exerc_04{
+    public static void main (String args []){
+        
+        int C, F;
+        
+        C = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor do grau Celsius "));
+        
+        JOptionPane.showMessageDialog(null, "A temperatura em fahrenheit " + (F = ((9 * C + 160) / 5)));
+        
+    }
+}
