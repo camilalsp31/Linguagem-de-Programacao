@@ -1,0 +1,20 @@
+import javax.swing.JOptionPane;
+/*
+ 6.Receba os valores em x e y. Efetua a troca de seus valores e mostre seus conteúdos.
+*/
+public class Exerc_06 {
+    public static void main (String args []){
+        
+        int x, y, aux;
+        
+        x = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de x "));
+        y = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de y "));
+        
+        aux = x;
+        x = y;
+        y = aux;
+        
+        JOptionPane.showMessageDialog(null,"O valor de x " + x);
+        JOptionPane.showMessageDialog(null,"O valor de y " + y);
+    }
+}
