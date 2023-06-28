@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+/*
+ 10.Receba 2 números reais. Calcule e mostre a diferença desses valores.
+*/
+public class Exerc_10 {
+    public static void main (String args []){
+        
+        int n1, n2 , subtraçao;
+        
+        n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número "));
+        n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número "));
+        
+        JOptionPane.showMessageDialog(null,"O valor da diferença é " + ( subtraçao = n1 - n2));
+    }
+}
