@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+/*
+ 9.Receba os 2 números inteiros. Calcule e mostre a soma dos quadrados.
+*/
+public class Exerc_09 {
+    public static void main (String args []){
+        
+        int n1, n2, soma_dos_quadrados;
+        
+        n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro número "));
+        n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo número "));
+        
+        soma_dos_quadrados = ((n1 * n1) + (n2 * n2));
+        
+        JOptionPane.showMessageDialog(null,"A soma dos quadrados é " + soma_dos_quadrados);
+        
+    }
+  
+}
