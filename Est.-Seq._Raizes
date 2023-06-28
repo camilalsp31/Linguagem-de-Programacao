@@ -1,0 +1,27 @@
+import javax.swing.JOptionPane;
+/*
+5.Receba os coeficientes A, B e C de uma equação do 2º grau (AX²+BX+C=0). Calcule e mostre as raízes reais (considerar que a equação possue2 raízes).
+*/
+public class Exerc_05 {
+    public static void main (String args []){
+        
+        int A, B, C, Delta,  X1, X2;
+        
+        A = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de A "));
+        
+        B = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de B "));
+        
+        C = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de C "));
+        
+        Delta = ((B*B)-4*A*C);
+        
+        double x1 = (-B + Math.sqrt(Delta))/(2*A);
+        
+        double x2 = (-B - Math.sqrt(Delta))/(2*A);
+                
+        System.out.println("x1 = " + x1);
+        
+        System.out.println("x2 = " + x2);
+ 
+    }
+}
