@@ -1,0 +1,20 @@
+Import javax.swing.JOptionPane;
+/*
+ Calcule a quantidade de litros gastos em uma viagem, sabendo que o 
+  automóvel faz 12 km/l. Receber o tempo de percurso e a velocidade média
+ */
+public class Exerc_17
+{    
+   public static void main (String args [ ])
+     {
+      int Tempo, Veloc_media, Litros_KM, Litros_Gastos;
+      
+      Tempo = Integer.parseInt(JOptionPane.showInputDialog  ("Informe o tempo em horas")); 
+      Veloc_media = Integer.parseInt(JOptionPane.showInputDialog  ("Informe a velocidade média"));
+      
+      Litros_KM = 12;
+        
+      Litros_Gastos = (Tempo * Veloc_media) / Litros_KM;      
+      JOptionPane.showMessageDialog(null,"O total de litros gastos é  " + Litros_Gastos);  
+    } 
+}
