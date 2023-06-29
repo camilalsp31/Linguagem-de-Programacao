@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+/*
+  12.	Receba o ano de nascimento e o ano atual. Calcule e mostre a sua idade e quantos anos terá daqui a 17 anos.                                                                                            
+ */
+
+public class Exerc_12 {
+    public static void main (String args []){
+        
+        int Ano_nasc, Ano_atual, Idade, Idade_futura;
+        
+        Ano_nasc = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano de nascimento "));
+        Ano_atual = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano atual "));
+        
+        Idade = Ano_atual - Ano_nasc;
+        Idade_futura = Idade + 17;
+        
+        JOptionPane.showMessageDialog(null,"No futuro terá " + Idade_futura);
+    }
+}
