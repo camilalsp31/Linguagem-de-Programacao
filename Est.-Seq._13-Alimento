@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+/*
+ 13.Receba a quantidade de alimento em quilos. Calcule e mostre quantos dias durará esse alimento sabendo que a pessoa consome 50g ao dia.                                                                                                                *
+ */
+public class Exerc_13 {
+    public static void main (String args []){
+        
+        int peso, dias;
+        
+        peso = Integer.parseInt(JOptionPane.showInputDialog("Digite o peso do alimento "));
+        
+        
+        JOptionPane.showMessageDialog(null,"O alimento durará " + (dias = peso / 50));
+    }
+}
