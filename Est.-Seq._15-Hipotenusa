@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+/*
+ 15.Receba os valores de 2 catetos de um triângulo retângulo. Calcule e mostre a hipotenusa.                                                                     *
+ */
+public class Exerc_15 {
+    public s
+tatic void main (String args []){
+        
+        Double cateto1, cateto2, hipotenusa;
+        
+        cateto1 = Double.parseDouble(JOptionPane.showInputDialog("Digite o primeiro cateto "));
+        cateto2 = Double.parseDouble(JOptionPane.showInputDialog("Digite o segundo cateto "));
+        
+        hipotenusa = (((cateto1 * 2) + (cateto2 * 2)) * 0.5);
+        
+        JOptionPane.showMessageDialog(null,"A hipotenusa do triângulo é " + hipotenusa);
+        
+    }
+}
