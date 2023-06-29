@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+/*
+11.	Receba o raio de uma circunferência. Calcule e mostre o comprimento da circunferência.
+ */
+public class Exerc_11 {
+    public static void main (String args []){
+        
+       double Raio, Comprimento;
+       
+       Raio = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do raio "));
+       
+       JOptionPane.showMessageDialog(null,"O comprimento da circunferência é " + (Comprimento = 3.14 * (Raio * Raio)));
+    }
+    
+}
